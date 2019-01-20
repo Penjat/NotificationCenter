@@ -16,14 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
     
-    [notificationCenter addObserver:self selector:@selector(updateLabel:) name:@"wasPressed" object:nil];
 }
 -(void)updateLabel:(NSNotification*)notification{
     
     NSLog(@"should update the label");
     self.counterLabel.text = [[NSString alloc]initWithFormat:@"%@",notification.object ];
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSLog(@"view will load");
+    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+    
+    [notificationCenter addObserver:self selector:@selector(updateLabel:) name:@"wasPressed" object:nil];
 }
 
 

@@ -9,6 +9,7 @@
 #import "StepViewController.h"
 
 @interface StepViewController ()
+@property (weak, nonatomic) IBOutlet UIStepper *stepper;
 
 @end
 
@@ -20,14 +21,21 @@
 }
 - (IBAction)addStep:(UIStepper*)sender {
     NSLog(@"adding step %f",sender.value);
+    
+    [self postNotificationStepperCount];
+}
+-(void)postNotificationStepperCount{
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
     
-    NSDictionary *userInfo = @{@"wasPressed":@(sender.value)};
+    NSDictionary *userInfo = @{@"wasPressed":@(self.stepper.value)};
     
-    NSNotification *stepperNotification = [[NSNotification alloc] initWithName:@"wasPressed" object:@(sender.value) userInfo:userInfo];
+    NSNotification *stepperNotification = [[NSNotification alloc] initWithName:@"wasPressed" object:@(self.stepper.value) userInfo:userInfo];
     
     [notificationCenter postNotification:stepperNotification];
-    
+}
+-(void)viewDidDisappear:(BOOL)animated{
+    NSLog(@"I am disappearing");
+    [self postNotificationStepperCount];
 }
 
 /*
