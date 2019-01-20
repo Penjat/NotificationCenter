@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0B1B3E7521F50C6600546BD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B3E7421F50C6600546BD0 /* AppDelegate.m */; };
-		0B1B3E7821F50C6600546BD0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B3E7721F50C6600546BD0 /* ViewController.m */; };
 		0B1B3E7B21F50C6600546BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1B3E7921F50C6600546BD0 /* Main.storyboard */; };
 		0B1B3E7D21F50C6600546BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B1B3E7C21F50C6600546BD0 /* Assets.xcassets */; };
 		0B1B3E8021F50C6600546BD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1B3E7E21F50C6600546BD0 /* LaunchScreen.storyboard */; };
 		0B1B3E8321F50C6600546BD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B3E8221F50C6600546BD0 /* main.m */; };
 		0B1B3E8D21F50C6700546BD0 /* NotificationCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B3E8C21F50C6700546BD0 /* NotificationCenterTests.m */; };
 		0B1B3E9821F50C6700546BD0 /* NotificationCenterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B3E9721F50C6700546BD0 /* NotificationCenterUITests.m */; };
+		0B1B3EAA21F50EDA00546BD0 /* LabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B3EA921F50EDA00546BD0 /* LabelViewController.m */; };
+		0B1B3EAD21F50FBF00546BD0 /* StepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B3EAC21F50FBF00546BD0 /* StepViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,6 @@
 		0B1B3E7021F50C6600546BD0 /* NotificationCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B1B3E7321F50C6600546BD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0B1B3E7421F50C6600546BD0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0B1B3E7621F50C6600546BD0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0B1B3E7721F50C6600546BD0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0B1B3E7A21F50C6600546BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B1B3E7C21F50C6600546BD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B1B3E7F21F50C6600546BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,10 @@
 		0B1B3E9321F50C6700546BD0 /* NotificationCenterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationCenterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B1B3E9721F50C6700546BD0 /* NotificationCenterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationCenterUITests.m; sourceTree = "<group>"; };
 		0B1B3E9921F50C6700546BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B1B3EA821F50EDA00546BD0 /* LabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelViewController.h; sourceTree = "<group>"; };
+		0B1B3EA921F50EDA00546BD0 /* LabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelViewController.m; sourceTree = "<group>"; };
+		0B1B3EAB21F50FBF00546BD0 /* StepViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StepViewController.h; sourceTree = "<group>"; };
+		0B1B3EAC21F50FBF00546BD0 /* StepViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StepViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +104,12 @@
 		0B1B3E7221F50C6600546BD0 /* NotificationCenter */ = {
 			isa = PBXGroup;
 			children = (
+				0B1B3EAB21F50FBF00546BD0 /* StepViewController.h */,
+				0B1B3EAC21F50FBF00546BD0 /* StepViewController.m */,
+				0B1B3EA821F50EDA00546BD0 /* LabelViewController.h */,
+				0B1B3EA921F50EDA00546BD0 /* LabelViewController.m */,
 				0B1B3E7321F50C6600546BD0 /* AppDelegate.h */,
 				0B1B3E7421F50C6600546BD0 /* AppDelegate.m */,
-				0B1B3E7621F50C6600546BD0 /* ViewController.h */,
-				0B1B3E7721F50C6600546BD0 /* ViewController.m */,
 				0B1B3E7921F50C6600546BD0 /* Main.storyboard */,
 				0B1B3E7C21F50C6600546BD0 /* Assets.xcassets */,
 				0B1B3E7E21F50C6600546BD0 /* LaunchScreen.storyboard */,
@@ -262,9 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B1B3E7821F50C6600546BD0 /* ViewController.m in Sources */,
 				0B1B3E8321F50C6600546BD0 /* main.m in Sources */,
 				0B1B3E7521F50C6600546BD0 /* AppDelegate.m in Sources */,
+				0B1B3EAD21F50FBF00546BD0 /* StepViewController.m in Sources */,
+				0B1B3EAA21F50EDA00546BD0 /* LabelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
