@@ -16,6 +16,9 @@
 		0B1B3E9821F50C6700546BD0 /* NotificationCenterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B3E9721F50C6700546BD0 /* NotificationCenterUITests.m */; };
 		0B1B3EAA21F50EDA00546BD0 /* LabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B3EA921F50EDA00546BD0 /* LabelViewController.m */; };
 		0B1B3EAD21F50FBF00546BD0 /* StepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B3EAC21F50FBF00546BD0 /* StepViewController.m */; };
+		0B3140B021F53B6F000ECB12 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3140AF21F53B6F000ECB12 /* KVOViewController.m */; };
+		0B3140B321F53BE7000ECB12 /* PanControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3140B221F53BE7000ECB12 /* PanControlView.m */; };
+		0B3140B621F54699000ECB12 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3140B521F54699000ECB12 /* KeyboardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		0B1B3EA921F50EDA00546BD0 /* LabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelViewController.m; sourceTree = "<group>"; };
 		0B1B3EAB21F50FBF00546BD0 /* StepViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StepViewController.h; sourceTree = "<group>"; };
 		0B1B3EAC21F50FBF00546BD0 /* StepViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StepViewController.m; sourceTree = "<group>"; };
+		0B3140AE21F53B6F000ECB12 /* KVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
+		0B3140AF21F53B6F000ECB12 /* KVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
+		0B3140B121F53BE7000ECB12 /* PanControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanControlView.h; sourceTree = "<group>"; };
+		0B3140B221F53BE7000ECB12 /* PanControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanControlView.m; sourceTree = "<group>"; };
+		0B3140B421F54699000ECB12 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		0B3140B521F54699000ECB12 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +117,12 @@
 				0B1B3EAC21F50FBF00546BD0 /* StepViewController.m */,
 				0B1B3EA821F50EDA00546BD0 /* LabelViewController.h */,
 				0B1B3EA921F50EDA00546BD0 /* LabelViewController.m */,
+				0B3140AE21F53B6F000ECB12 /* KVOViewController.h */,
+				0B3140AF21F53B6F000ECB12 /* KVOViewController.m */,
+				0B3140B421F54699000ECB12 /* KeyboardViewController.h */,
+				0B3140B521F54699000ECB12 /* KeyboardViewController.m */,
+				0B3140B121F53BE7000ECB12 /* PanControlView.h */,
+				0B3140B221F53BE7000ECB12 /* PanControlView.m */,
 				0B1B3E7321F50C6600546BD0 /* AppDelegate.h */,
 				0B1B3E7421F50C6600546BD0 /* AppDelegate.m */,
 				0B1B3E7921F50C6600546BD0 /* Main.storyboard */,
@@ -269,8 +284,11 @@
 			files = (
 				0B1B3E8321F50C6600546BD0 /* main.m in Sources */,
 				0B1B3E7521F50C6600546BD0 /* AppDelegate.m in Sources */,
+				0B3140B621F54699000ECB12 /* KeyboardViewController.m in Sources */,
+				0B3140B321F53BE7000ECB12 /* PanControlView.m in Sources */,
 				0B1B3EAD21F50FBF00546BD0 /* StepViewController.m in Sources */,
 				0B1B3EAA21F50EDA00546BD0 /* LabelViewController.m in Sources */,
+				0B3140B021F53B6F000ECB12 /* KVOViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

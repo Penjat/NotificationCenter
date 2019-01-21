@@ -10,6 +10,52 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Item-->
+        <scene sceneID="x0u-o5-zMG">
+            <objects>
+                <viewController id="a0h-24-3nU" customClass="KVOViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZyM-YF-XWZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c0j-AW-nk4">
+                                <rect key="frame" x="132" y="102" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hle-SQ-ft5" customClass="PanControlView">
+                                <rect key="frame" x="20" y="439.5" width="335" height="133.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DJD-Ma-gxt" appends="YES" id="J3a-HK-meb"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hle-SQ-ft5" firstAttribute="height" secondItem="ZyM-YF-XWZ" secondAttribute="height" multiplier="0.2" id="bSG-oI-Pab"/>
+                            <constraint firstItem="ela-3c-mNx" firstAttribute="trailing" secondItem="Hle-SQ-ft5" secondAttribute="trailing" constant="20" id="mII-Gg-TtX"/>
+                            <constraint firstItem="ela-3c-mNx" firstAttribute="bottom" secondItem="Hle-SQ-ft5" secondAttribute="bottom" constant="45" id="pTC-rE-Njc"/>
+                            <constraint firstItem="Hle-SQ-ft5" firstAttribute="leading" secondItem="ela-3c-mNx" secondAttribute="leading" constant="20" id="xki-DU-aOJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ela-3c-mNx"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="HhU-C9-Pyt"/>
+                    <connections>
+                        <outlet property="whiteView" destination="Hle-SQ-ft5" id="Rq4-93-xAG"/>
+                        <outlet property="yellowView" destination="c0j-AW-nk4" id="7LE-Gu-Gf8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNc-Zs-712" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="DJD-Ma-gxt">
+                    <connections>
+                        <action selector="pan:" destination="Hle-SQ-ft5" id="DLq-QH-qTV"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-160" y="665"/>
+        </scene>
         <!--Item 2-->
         <scene sceneID="MAm-lh-1z2">
             <objects>
@@ -72,6 +118,60 @@
             </objects>
             <point key="canvasLocation" x="800.79999999999995" y="-441.22938530734638"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="iIR-Wr-p3D">
+            <objects>
+                <viewController id="aMJ-wp-sMl" customClass="KeyboardViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lo5-20-Kgy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lxm-Of-ldu">
+                                <rect key="frame" x="40" y="470" width="295" height="128"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ctb-ul-XzI">
+                                        <rect key="frame" x="99" y="49" width="97" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ZGm-nu-73G"/>
+                                    <constraint firstItem="Ctb-ul-XzI" firstAttribute="centerY" secondItem="Lxm-Of-ldu" secondAttribute="centerY" id="tL7-Zi-UXc"/>
+                                    <constraint firstItem="Ctb-ul-XzI" firstAttribute="centerX" secondItem="Lxm-Of-ldu" secondAttribute="centerX" id="uKy-Ce-fLq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.1158826245" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Lxm-Of-ldu" firstAttribute="leading" secondItem="p2i-OJ-b4x" secondAttribute="leading" constant="40" id="1gj-yd-BYx"/>
+                            <constraint firstItem="p2i-OJ-b4x" firstAttribute="trailing" secondItem="Lxm-Of-ldu" secondAttribute="trailing" constant="40" id="1nY-Kl-6Dk"/>
+                            <constraint firstItem="Lxm-Of-ldu" firstAttribute="centerX" secondItem="p2i-OJ-b4x" secondAttribute="centerX" id="eXG-MT-qSR"/>
+                            <constraint firstItem="p2i-OJ-b4x" firstAttribute="bottom" secondItem="Lxm-Of-ldu" secondAttribute="bottom" constant="20" id="yx0-pA-7HZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p2i-OJ-b4x"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="wvC-A2-o8B" appends="YES" id="od3-hD-tpM"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="y9x-z5-UDr"/>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="yx0-pA-7HZ" id="KPh-6x-wpH"/>
+                        <outlet property="textField" destination="Ctb-ul-XzI" id="Lcz-fw-NEy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1YH-Yu-VY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="wvC-A2-o8B">
+                    <connections>
+                        <action selector="tapOnView:" destination="aMJ-wp-sMl" id="Jeq-f7-H8Y"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1095" y="-95"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OUg-8Q-RBf">
             <objects>
@@ -84,6 +184,8 @@
                     <connections>
                         <segue destination="knu-3Z-DDW" kind="relationship" relationship="viewControllers" id="3Uc-ee-Lab"/>
                         <segue destination="xny-nV-P5P" kind="relationship" relationship="viewControllers" id="dhZ-yh-Vsa"/>
+                        <segue destination="a0h-24-3nU" kind="relationship" relationship="viewControllers" id="6b9-Rl-Yjz"/>
+                        <segue destination="aMJ-wp-sMl" kind="relationship" relationship="viewControllers" id="8aC-kH-vaQ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0GP-r9-zZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
